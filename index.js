@@ -23,7 +23,11 @@ app.prepare().then(() => {
   })
 
   server.listen(process.env.PORT, err => {
+    const world = 0x1F30E
     if (err) throw err
-    console.log(`> Ready on http://${process.env.HOST}:${process.env.PORT} WITH NODE_ENV = ${process.env.NODE_ENV}`)
+    console.log(`
+      🌎 Ready on http://${process.env.HOST}:${process.env.PORT}
+
+      ⚙️  NODE_ENV = ${process.env.NODE_ENV}`)
   })
 })
