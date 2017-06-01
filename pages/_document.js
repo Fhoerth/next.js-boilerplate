@@ -4,7 +4,8 @@ import React from 'react'
 import Document, { Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 import flush from 'styled-jsx/server'
-import ss from 'styles/global.scss'
+
+import stylesheet from 'styles/global.scss'
 
 class MyDocument extends Document {
   static getInitialProps ({ req }) {
@@ -16,7 +17,7 @@ class MyDocument extends Document {
       return (
         <html>
           <Head>
-            <style dangerouslySetInnerHTML={{ __html: ss }} />
+            <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
             <title>Fashioncook</title>
           </Head>
           <body>
@@ -32,7 +33,7 @@ class MyDocument extends Document {
       return (
         <html>
           <Head>
-            <style dangerouslySetInnerHTML={{ __html: ss }} />
+            <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
             <title>Fashioncook</title>
             {styleTags}
           </Head>

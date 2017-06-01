@@ -1,6 +1,7 @@
 import 'babel-polyfill'
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 import RootContainer from 'components/RootContainer'
 import { nextConnect } from 'services/store/initStore'
@@ -34,6 +35,13 @@ class IndexComponent extends React.Component {
       title: store.getState().helloWorld.title
     }
   }
+
+  static propTypes () {
+    return {
+      title: PropTypes.string
+    }
+  }
+
   render () {
     return (
       <RootContainer {...this.props}>
