@@ -1,14 +1,16 @@
 import React from 'react'
 import Link from 'next/link'
-import Head from 'next/head'
+import styled from 'styled-components'
+
+const Footer = styled.div`
+  background: lightgray;
+  margin-top: 50px;
+  text-align: center;
+  padding: 25px;
+`
 
 export default ({ children, title = 'This is the default title' }) => (
   <div>
-    <Head>
-      <title>{ title }</title>
-      <meta charSet='utf-8' />
-      <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-    </Head>
     <header>
       <nav>
         <Link href='/'><a>Home</a></Link> |
@@ -19,8 +21,8 @@ export default ({ children, title = 'This is the default title' }) => (
 
     { children }
 
-    <footer>
-      I`m here to stay
-    </footer>
+    <Footer>
+      I am here to stay
+    </Footer>
   </div>
 )

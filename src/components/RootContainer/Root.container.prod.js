@@ -1,6 +1,8 @@
 import React from 'react'
 import propTypes from 'prop-types'
 
+import Layout from '../Layout/Layout.component'
+
 class RootContainer extends React.Component {
   static propTypes () {
     return {
@@ -10,9 +12,9 @@ class RootContainer extends React.Component {
 
   render () {
     return (
-      <container>
+      <Layout>
         { this.props.children }
-      </container>
+      </Layout>
     )
   }
 }

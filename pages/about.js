@@ -53,12 +53,16 @@ class IndexComponent extends React.Component {
     return (
       <RootContainer {...this.props}>
         <Maintitle>
-          { this.props.title } <br/> Home
+        { this.props.title } <br/> About
         </Maintitle>
         <Info>You requested from { this.props.isServer ? 'server' : 'client' }</Info>
-        <Subtitle>Lorem Ipsum</Subtitle>
+        <Subtitle>Dolor sit amet</Subtitle>
         <Paragraph>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris hendrerit nibh non massa posuere, sed sodales nisi fringilla. Duis varius, dui at sodales accumsan, massa velit placerat lorem, sed cursus odio lectus quis neque. Ut vel tellus dolor. Cras ac tortor eu ligula mollis semper ac a orci. Vestibulum at mollis sapien. Duis dui quam, porta eget pharetra et, mollis nec est. Phasellus sollicitudin erat id felis commodo pellentesque. Quisque leo metus, dapibus vitae pellentesque ut, rhoncus non leo. Ut fringilla a sapien eget vehicula. Ut suscipit felis sed dui blandit, ut venenatis augue sollicitudin. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae
+          Nulla malesuada est in mauris porta pulvinar. Nunc finibus congue purus, vel maximus ante euismod sed.
+          unc ultrices justo non ipsum finibus, a vulputate ipsum fringilla.
+          Duis tincidunt eget orci sit amet pulvinar. Nunc gravida pretium turpis, nec imperdiet turpis auctor vitae.
+          Maecenas mi lectus, ornare eu felis eget, pellentesque sagittis risus. Sed vel scelerisque risus. Quisque viverra faucibus augue,
+          a iaculis turpis commodo sit amet.
         </Paragraph>
       </RootContainer>
     )

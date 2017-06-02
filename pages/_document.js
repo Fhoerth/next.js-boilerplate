@@ -5,6 +5,7 @@ import Document, { Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 import flush from 'styled-jsx/server'
 
+import Layout from 'components/Layout/Layout.component'
 import stylesheet from 'styles/global.scss'
 
 class MyDocument extends Document {
@@ -18,7 +19,7 @@ class MyDocument extends Document {
         <html>
           <Head>
             <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
-            <title>Fashioncook</title>
+            <title>Title!</title>
           </Head>
           <body>
             <Main />
@@ -34,7 +35,7 @@ class MyDocument extends Document {
         <html>
           <Head>
             <style dangerouslySetInnerHTML={{ __html: stylesheet }} />
-            <title>Fashioncook</title>
+            <title>Title!</title>
             {styleTags}
           </Head>
           <body>

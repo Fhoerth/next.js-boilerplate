@@ -2,6 +2,7 @@ import React from 'react'
 import propTypes from 'prop-types'
 
 import DevTools from './DevTools/DevTools.container'
+import Layout from '../Layout/Layout.component'
 
 class RootContainer extends React.Component {
   static propTypes () {
@@ -30,10 +31,10 @@ class RootContainer extends React.Component {
 
   render () {
     return (
-      <container>
+      <Layout>
         { this.state.isMounted && <DevTools />}
         { this.props.children }
-      </container>
+      </Layout>
     )
   }
 }
