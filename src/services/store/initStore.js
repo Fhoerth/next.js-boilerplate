@@ -7,6 +7,8 @@ import rootSagaWatchersRunner from './root.sagaWatchersRunner'
 import Repository from 'lib/repository/repository'
 import createClientInstance from 'lib/client/client'
 
+import { fetchTitle } from 'modules/helloWorld/helloWorld.repository'
+
 export const initStore = initialState => {
   const sagaMiddleware = createSagaMiddleware()
   let store = null
@@ -35,7 +37,7 @@ export const initStore = initialState => {
 
   const client = createClientInstance('YOUR_BASE_URL', 'YOUR_JWT_TOKEN_THAT_SHOULD_BE_AVALIABLE_IN_STORE')
   const resources = {
-    fetchTitle: () => () => Promise.resolve('Super Cool Hello World Title!')
+    fetchTitle
   }
   const repository = Repository.create(client, resources)
   const dependencies = {
